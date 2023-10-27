@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --pale-blue:hsl(223, 100%, 88%);
+    --light-red:hsl(354, 100%, 66%);
+    --gray:hsl(0, 0%, 59%);
+    --ver-dark-blue:hsl(209, 33%, 12%);
+    --blue:blue;
+}
+body{
+    font-family: Libre Franklin;
+}
+.ping-intro{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin:2rem 0;
+}
+#ping-logo{
+    width: 72px;
+}
+#ping-welcome-h{
+    font-size: 2.5rem;
+    padding: 0.8rem 0;
+    color: grey;
+    font-weight: 300;
+}
+#p-w{
+    font-weight: 600;
+    color: var(--ver-dark-blue);
+}
+.ping-email-btn{
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.ping-email-container{
+    position:relative;
+}
+#ping-input-email{
+    width: 350px;
+    height: 45px;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 40px;
+}
+.ping-email-error{
+    display: none;
+    position: absolute;
+    left: 10px;
+    bottom: -20px;
+    font-size: 10px;
+    color: var(--light-red);
+    font-style: italic;
+}
+.active{
+    display: block;
+}
+button{
+    background-color:blue;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    height: 45px;
+    width: 150px;
+    border-radius: 40px;
+    border: none;
+    transition: all 200ms ease;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+button:hover{
+    background-color: rgb(95, 95, 252);
+}
+#ping-img-dashboard{
+    padding-top: 2rem;
+    width: 600px;
+}
+.ping-logo-ft{
+    padding-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+#x{
+    filter: invert(9%) sepia(100%) saturate(6377%) hue-rotate(246deg) brightness(97%) contrast(147%);
+    padding: 0.2rem;
+    cursor: pointer;
+}
+#x:hover{
+    filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(129deg) brightness(106%) contrast(105%);
+}
+.ping-face-book{
+    border: 0.5px solid grey;
+    border-radius: 50%;
+    padding: 0.15rem;
+    display: flex;
+    align-items: center;
+    transition: 200ms ease-in;
+}
+.ping-face-book:hover{
+    background-color: var(--pale-blue);
+}
+.ping-twitter{
+    border: 0.5px solid grey;
+    border-radius: 50%;
+    padding: 0.15rem;
+    display: flex;
+    align-items: center;
+    transition: 200ms ease-in-out;
+}
+.ping-twitter:hover{
+    background-color: var(--pale-blue);
+}
+.ping-instagram{
+    border: 0.5px solid grey;
+    border-radius: 50%;
+    padding: 0.15rem;
+    display: flex;
+    align-items: center;
+    transition: 200ms ease-in-out;
+}
+.ping-instagram:hover{
+    background-color: var(--pale-blue);
+}
+#ping-copy-right{
+    font-size: 12px;
+    color: gray;
+}
+@media only screen and (max-width:500px){
+    .ping-intro{
+        margin: 0;
+        padding: 0 2rem;
+    }
+    #ping-welcome-h{
+        font-size: 1.8rem;
+    }
+    .ping-email-btn{
+        flex-direction: column;
+        transition: all 200ms ease-in-out;
+        gap: 1rem;
+    }
+    
+    .ping-email-error{
+        left: 90px;
+    }
+    .active-e{
+        gap: 2rem; 
+        transition: all 200ms ease-in-out;
+    }
+    button{
+        width: 100%;
+    }
+    #ping-img-dashboard{
+        width: 350px;
+    }
+}
